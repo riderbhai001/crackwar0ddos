@@ -372,8 +372,8 @@ def process_attack_command(message):
                                                "*Please select a different port to proceed.*", 
                                                reply_markup=create_inline_keyboard(), parse_mode='Markdown')
             return
-        if duration >= 1200:
-            bot.send_message(message.chat.id, "*⏳ Maximum duration is 1200 seconds.*\n"
+        if duration >= 181:
+            bot.send_message(message.chat.id, "*⏳ Maximum duration is 180 seconds.*\n"
                                                "*Please shorten the duration and try again!*", 
                                                reply_markup=create_inline_keyboard(), parse_mode='Markdown')
             return  
