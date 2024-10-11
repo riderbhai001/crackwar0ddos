@@ -19,7 +19,7 @@ import psutil
 loop = asyncio.get_event_loop()
 
 TOKEN = '7898127720:AAE7G3OXp9WolP4qdFu-wpnIudeRmgaYRgE'
-MONGO_URI = 'mongodb+srv://Cluster0:Cluster0@cluster0.5mvg9ej.mongodb.net/danger?retryWrites=true&w=majority'
+MONGO_URI = 'mongodb+srv://rishi:ipxkingyt@rishiv.ncljp.mongodb.net/?retryWrites=true&w=majority&appName=rishiv'
 FORWARD_CHANNEL_ID = -1002375657470
 CHANNEL_ID = -1002375657470
 error_channel_id = -1002375657470
@@ -27,7 +27,7 @@ error_channel_id = -1002375657470
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
-db = client['danger']
+db = client['rishi']
 users_collection = db.users
 
 bot = telebot.TeleBot(TOKEN)
