@@ -23,4 +23,4 @@ jobs:
         run: |
           chmod +x bgmi 
           pip install telebot aiohttp psutil pytz flask pymongo 
-          python3 Danger.py
+          python3 m.py
