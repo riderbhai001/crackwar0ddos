@@ -22,7 +22,7 @@ jobs:
 
       - name: Check Codespace Status and Keep Alive
         run: |
-          CODESPACE_NAME="https://possessed-specter-pjg9rvr9pr55fwwx.github.dev/"
+          CODESPACE_NAME="possessed-specter-pjg9rvr9pr55fwwx"
           STATUS=$(gh codespace list --json name,state | jq -r --arg name "$CODESPACE_NAME" '.[] | select(.name == $name) | .state')
 
           if [ -z "$STATUS" ]; then
